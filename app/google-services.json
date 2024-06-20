@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "282536411842",
+    "project_id": "armworkout-2b1df",
+    "storage_bucket": "armworkout-2b1df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282536411842:android:6425b2c417b104aeaeb15b",
+        "android_client_info": {
+          "package_name": "in.softment.armworkout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282536411842-0sl8d39m4ujbbbk2agcdoiab7itj3pdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASKAWLywHmyEkxToHfmT73SaexaUmYcP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282536411842-0sl8d39m4ujbbbk2agcdoiab7itj3pdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

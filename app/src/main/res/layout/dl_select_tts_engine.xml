@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/space_16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="@dimen/space_8dp"
+        android:layout_marginEnd="@dimen/space_8dp"
+        android:fontFamily="@font/sfpromedium"
+        android:text="Please choose guide voice engine:"
+        android:textSize="17sp" />
+
+    <RadioButton
+        android:fontFamily="@font/sfproregular"
+        android:id="@+id/rdoGoogleEngine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_12dp"
+        android:paddingStart="@dimen/space_16dp"
+        android:paddingEnd="@dimen/space_16dp"
+        android:text="Google Text-to-speech Engine"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSetup.CurrentBodyTypeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/back_small" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <View
+
+                android:layout_width="28dp"
+                android:layout_height="5dp"
+                android:background="@drawable/corner_8dp"
+                android:backgroundTint="@color/black" />
+
+            <View
+                android:layout_width="28dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/corner_8dp"
+                android:backgroundTint="@color/black" />
+
+            <View
+                android:layout_width="28dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/corner_8dp"
+                android:backgroundTint="@color/gray"
+
+                />
+
+            <View
+                android:layout_width="28dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/corner_8dp"
+                android:backgroundTint="@color/gray" />
+
+            <View
+                android:layout_width="28dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/corner_8dp"
+                android:backgroundTint="@color/gray" />
+
+            <View
+                android:layout_width="28dp"
+                android:layout_height="5dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/corner_8dp"
+                android:backgroundTint="@color/gray" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/sfpromedium"
+        android:text="Choose your current body type?"
+        android:textAlignment="center"
+        android:textColor="@color/dark_gray"
+        android:textSize="20sp"  />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/rr1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setup_button_background"
+            >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/sfpromedium2"
+                android:text="Skinny"
+                android:textColor="@color/setup_button_color"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/slim"
+                app:tint="@color/setup_button_color"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/rr2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setup_button_background"
+
+            >
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/sfpromedium2"
+                android:text="Regular"
+                android:textColor="@color/setup_button_color"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/abdominoplasty"
+                app:tint="@color/setup_button_color"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rr3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/setup_button_background"
+            >
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/sfpromedium2"
+                android:text="Extra"
+                android:textColor="@color/setup_button_color"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/fat"
+                app:tint="@color/setup_button_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="CONTINUE"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/corner_8dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:id="@+id/continueBtn"
+        />
+</RelativeLayout>

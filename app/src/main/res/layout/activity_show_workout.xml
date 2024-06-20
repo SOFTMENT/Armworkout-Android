@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6f6f6"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ShowWorkoutActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="24dp"
+        android:scrollbars="none" />
+
+
+    <LinearLayout
+        android:layout_below="@+id/recyclerview"
+        android:background="@drawable/workout_top_radius"
+        android:layout_marginStart="5dp"
+
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/title_workout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sfpromedium2"
+                android:text="ARM BEGINNER"
+                android:textColor="#003132"
+                android:textSize="13sp" />
+
+            <TextView
+
+                android:id="@+id/total_workout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_workout"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/sfpromedium2"
+                android:text="18"
+                android:textColor="#003132"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/kcal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/total_workout"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/total_workout"
+                android:fontFamily="@font/sfpromedium2"
+                android:text="wokout / 450 kcal"
+                android:textColor="#003132"
+                android:textSize="13sp" />
+
+
+            <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                android:id="@+id/circular_progress"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                app:formattingPattern="0\%% "
+                app:progressBackgroundColor="#E1EFE9"
+                app:progressColor="#32C3C6"
+                app:textColor="#878484"
+                app:textSize="12sp" />
+
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:nestedScrollingEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerview_workout"
+            android:background="@color/white"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+</ScrollView>

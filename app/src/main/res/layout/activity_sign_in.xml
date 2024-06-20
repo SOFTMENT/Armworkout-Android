@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/armanimation" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_above="@+id/bysigninguptext"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/facebook"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/corner_border_login"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="24dp"
+                android:src="@drawable/facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/sfpromedium2"
+                android:text="Continue with Facebook"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/google"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/corner_border_login"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="24dp"
+                android:src="@drawable/google" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/sfpromedium2"
+                android:text="Continue with Google"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bysigninguptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/privacyandtermsll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="3dp"
+        android:fontFamily="@font/sfpromedium2"
+        android:text="By signing up you accept the"
+        android:textColor="@color/dark_gray"
+        android:textSize="13sp" />
+    <LinearLayout
+
+        android:id="@+id/privacyandtermsll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25sp"
+        >
+    <TextView
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms of Service"
+        android:fontFamily="@font/sfprobold2"
+        android:textColor="@color/black"
+
+        />
+        <TextView
+            android:textSize="13sp"
+            android:layout_marginStart="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" and "
+            android:fontFamily="@font/sfpromedium2"
+            android:textColor="@color/dark_gray"
+            />
+        <TextView
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy."
+            android:fontFamily="@font/sfprobold2"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

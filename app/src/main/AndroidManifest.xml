@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.softment.armworkout">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Utils.AppControl"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ArmWorkOut"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".PlayWorkout"
+            android:exported="false" />
+        <activity
+            android:name=".ShowWorkoutDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditAgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditHeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditWeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditGenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HealthDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WorkoutReminder"
+            android:exported="false" />
+        <activity
+            android:name=".ShowWorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileSetup.MoreRelaxedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileSetup.HeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileSetup.AgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileSetup.CurrentWeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileSetup.CurrentBodyTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileSetup.GenderAcitivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

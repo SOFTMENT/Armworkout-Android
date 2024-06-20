@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="dark_gray">#555555</color>
+    <color name="text_gray">#1f1f1f</color>
+    <color name="gray_back_color">#65EBEDEF</color>
+
+
+    <!-- Todo Toolbar -->
+    <color name="colorToolbarText">#ffffff</color>
+    <color name="colorToolbarBg">#ff0202</color>
+    <color name="colorHistoryImgBg">#464646</color>
+
+    <!-- Todo Common colors -->
+    <color name="colorTheme">#ff0202</color>
+    <color name="colorGray">#aeaeae</color>
+    <color name="colorGrayLight">#ebf0f2</color>
+    <color name="colorGrayDark">#a1a1a1</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteTran">#8BFFFFFF</color>
+    <color name="colorBlack">#1a222d</color>
+    <color name="colorBlackTrans">#87000000</color>
+    <color name="colorDrawerBg2">#F8F8F8</color>
+    <color name="colorThemeNew">#1c2135</color>
+
+    <!-- Todo Bg Colors -->
+    <color name="colorBgGray">#A1DAD9D9</color>
+    <color name="colorBgWhite">#FFFFFF</color>
+    <color name="colorBgBlack">#1a222d</color>
+    <color name="colorBgBlueLight">#232d3a</color>
+
+    <!-- Todo Drawer -->
+    <color name="colorDrawerText">#000000</color>
+    <color name="colorDrawerBg">#ff0202</color>
+
+
+    <!-- Todo Level colors  -->
+    <color name="colorBeginner">#ff9a02</color>
+    <color name="colorIntermediate">#359aff</color>
+    <color name="colorAdvance">#ff3535</color>
+
+
+    <!-- Todo BMI Chart Background -->
+    <color name="colorFirst">#91CEC0</color>
+    <color name="colorSecond">#154C83</color>
+    <color name="colorThird">#1DC974</color>
+    <color name="colorFour">#CCC504</color>
+    <color name="colorFive">#E09C55</color>
+    <color name="colorSix">#CF2E2E</color>
+
+
+    <!-- Todo Extra colors -->
+    <color name="color1">#0A2141</color>
+    <color name="color2">#6C6BFF</color>
+    <color name="color3">#FF385F</color>
+    <color name="color4">#02D1C1</color>
+    <color name="color5">#02FFAC</color>
+    <color name="color6">#103FC6</color>
+    <color name="color7">#537FF9</color>
+    <color name="color8">#7B3BCC</color>
+    <color name="color9">#299A02</color>
+    <color name="color10">#2F4255</color>
+    <color name="red">#ff0000</color>
+
+
+</resources>

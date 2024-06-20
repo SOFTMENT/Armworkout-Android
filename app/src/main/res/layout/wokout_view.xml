@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/lottie_workout_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/square_box_radius"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:id="@+id/lottie_workout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/dynamic_chest" />
+
+    </RelativeLayout>
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:layout_centerVertical="true"
+       android:layout_toEndOf="@+id/lottie_workout_view"
+       android:layout_marginStart="16dp"
+       >
+       <TextView
+           android:id="@+id/title"
+           android:textColor="@color/black"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="DYNAMIC CHEST"
+           android:textSize="14sp"
+           android:fontFamily="@font/sfpromedium"
+           android:layout_marginBottom="4dp"
+           />
+       <TextView
+           android:id="@+id/durations_repetations"
+           android:layout_marginTop="4dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="x10"
+           android:textSize="13sp"
+           android:fontFamily="@font/sfpromedium"
+           />
+   </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".HealthDataActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_small"
+            app:tint="@color/black" />
+
+        <TextView
+            android:fontFamily="@font/robobold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEALTH DATA"
+            android:layout_marginStart="8dp"
+
+            android:textSize="16sp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E7EBF3"
+       android:background="@drawable/back_edittext"
+
+        >
+
+        <TextView
+            android:fontFamily="@font/sfpromedium2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="Gender"
+            android:textColor="#343434"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/genderTV"
+                android:fontFamily="@font/sfproregular2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_centerVertical="true"
+
+                android:textColor="#555"
+                android:textSize="13sp"
+                android:layout_marginEnd="4dp"
+                />
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_outline_edit_24"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E7EBF3"
+        android:background="@drawable/back_edittext"
+        >
+
+        <TextView
+            android:fontFamily="@font/sfpromedium2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="Weight"
+            android:textColor="#343434"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/weightTV"
+                android:fontFamily="@font/sfproregular2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="86.5 kg"
+
+                android:textColor="#555"
+                android:textSize="13sp"
+                android:layout_marginEnd="4dp"
+                />
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_outline_edit_24"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E7EBF3"
+        android:background="@drawable/back_edittext"
+        >
+
+        <TextView
+            android:fontFamily="@font/sfpromedium2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="Height"
+            android:textColor="#343434"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/heightTV"
+                android:fontFamily="@font/sfproregular2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5'11&quot;"
+
+                android:textColor="#555"
+                android:textSize="13sp"
+                android:layout_marginEnd="4dp"
+                />
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_outline_edit_24"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E7EBF3"
+        android:background="@drawable/back_edittext"
+        >
+
+        <TextView
+            android:fontFamily="@font/sfpromedium2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="Age"
+            android:textColor="#343434"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/ageTV"
+                android:fontFamily="@font/sfproregular2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26"
+
+                android:textColor="#555"
+                android:textSize="13sp"
+                android:layout_marginEnd="4dp"
+                />
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_outline_edit_24"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FeedbackActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_small" />
+
+
+        <TextView
+
+            android:layout_marginEnd="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfpromedium"
+            android:text="Feedback"
+            android:textAlignment="center"
+            android:textColor="@color/dark_gray"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/suggestionET"
+        android:textSize="13sp"
+        android:fontFamily="@font/sfproregular2"
+        android:padding="12dp"
+        android:gravity="top|start"
+        android:hint="Feedback &amp; Suggestion"
+        android:backgroundTint="#5BEDEDED"
+        android:background="@drawable/back_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="16dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/back_edittext"
+        android:backgroundTint="@color/teal_700"
+        android:text="SEND"
+        android:textColor="#fff"
+        android:fontFamily="@font/sfpromedium2"
+
+        />
+
+
+
+
+</LinearLayout>
